@@ -6,6 +6,16 @@
   color: #000;
 }
 
+
+:root {
+  --font-color: #19bc64;
+  --livingDesign-title-color-one: #8c462b;
+  --livingDesign-title-color-two: #3d414b;
+  --livingDesign-title-color-three: #ca8355;
+  --livingDesign-title-color-four: #764b33;
+  --main-title-font-color: #fff;
+}
+
 img {
   width: 100%;
   height: 100%;
@@ -15,11 +25,257 @@ body {
   min-width: 1200px;
 }
 
-:root {
-  --font-color: #19bc64;
-}
+
 
 .active_banner_list {
   background-color: #fff;
 
+}
+
+.title_box {
+  margin-top: 137px;
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    width: 789px;
+    height: 46px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .botton_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+
+    .msg_title {
+      position: relative;
+      text-align: center;
+      width: 178px;
+      height: 42px;
+      line-height: 42px;
+      border: solid 1px #e0e0e0;
+
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        content: '';
+        display: block;
+        width: 210px;
+        height: 0;
+        border-bottom: 2px solid #e0e0e0;
+        transform: translateX(-10%);
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        content: '';
+        display: block;
+        width: 210px;
+        height: 0;
+        transform: translateX(10%);
+        border-bottom: 2px solid #e0e0e0;
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      transform: scale(.6);
+    }
+  }
+}
+
+
+
+// 导航栏
+header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+
+  .logo {
+    width: 54px;
+    height: 33px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .navList {
+    height: 100%;
+
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      li {
+        font-size: 16px;
+        height: 100%;
+        margin: 0 25px;
+
+
+        a {
+          display: flex;
+          height: 99%;
+          font-size: 16px;
+          align-items: center;
+        }
+
+        &:hover a {
+          color: #19bc64;
+        }
+
+        .active_color_a {
+          border-bottom: 1px solid #19bc64;
+          color: #19bc64;
+        }
+      }
+    }
+  }
+}
+
+
+// 页脚区域
+footer {
+  background-color: #202020;
+  width: 100%;
+  height: 313px;
+
+  .footer_content {
+    height: 100%;
+
+    .msg_content {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+
+      .last_content_item {
+        &>li {
+          margin-bottom: 36px;
+
+          span,
+          i {
+            color: var(--main-title-font-color);
+          }
+        }
+
+        .phone_link {
+          border-left: 1px solid #4d4d4d;
+          ;
+          padding-left: 25px;
+
+          li:not(:last-child) {
+            margin-bottom: 29px;
+
+          }
+
+          li {
+
+            span,
+            i {
+              color: var(--main-title-font-color);
+            }
+          }
+        }
+      }
+
+      .content_item {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          a {
+            color: #999999 !important;
+            font-size: 14px;
+          }
+
+          &:first-child a {
+            font-size: 16px;
+            color: #e6e6e6 !important;
+            margin-bottom: 39px;
+          }
+        }
+
+        li:not(:last-child) {
+          margin-right: 100px;
+          margin-bottom: 24px;
+        }
+
+
+
+        li {
+          color: #999999;
+          font-size: 14px;
+
+          &:first-child {
+            font-size: 16px;
+            color: #e6e6e6;
+            margin-bottom: 39px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer_bottom {
+    height: 38px;
+    width: 100%;
+    background-color: #202020;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .box {
+      width: 1185px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .trademark_msg {
+        color: var(--main-title-font-color);
+        font-size: 12px;
+      }
+
+      .link_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          color: var(--main-title-font-color) !important;
+        }
+
+        i {
+          font-size: 25px;
+          color: var(--main-title-font-color);
+
+          &:not(:last-child) {
+            margin-right: 10px;
+          }
+        }
+
+
+      }
+    }
+  }
 }
