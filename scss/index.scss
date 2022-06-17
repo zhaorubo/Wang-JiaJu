@@ -13,7 +13,7 @@
   align-items: center;
   padding-top: 300px;
   // justify-content: center;
-  background: url('/assets//images/indexImg/banner1.png') no-repeat;
+  background: url('../assets/images/indexImg/banner1.png') no-repeat;
 
   .banner_title {
     margin-bottom: 66px;
@@ -120,7 +120,7 @@ main {
 
     .live_content_box {
       position: relative;
-      background: url('/assets//images/indexImg/图层2.png');
+      background: url('../assets/images/indexImg/图层2.png');
       height: 936px;
       width: 100%;
       display: flex;
@@ -311,7 +311,7 @@ main {
 
     .news_content_box {
       position: relative;
-      background: url('/assets//images/indexImg/小banner1.png') no-repeat;
+      background: url('../assets/images/indexImg/小banner1.png') no-repeat;
       height: 765px;
       width: 100%;
       display: flex;
@@ -557,7 +557,7 @@ main {
 
     .center_content {
       position: relative;
-      background: url('/assets//images/indexImg/222.png') no-repeat;
+      background: url('../assets/images/indexImg/222.png') no-repeat;
       height: 765px;
       width: 100%;
       z-index: 1;
