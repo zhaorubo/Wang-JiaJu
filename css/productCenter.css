@@ -52,7 +52,7 @@ footer .footer_bottom .box .link_box i { font-size: 25px; color: var(--main-titl
 footer .footer_bottom .box .link_box i:hover { color: var(--font-color); }
 footer .footer_bottom .box .link_box i:not(:last-child) { margin-right: 10px; }
 
-.banner { position: relative; width: 100%; z-index: 1; height: 758px; display: flex; box-sizing: border-box; flex-direction: column; align-items: center; padding-top: 300px; background: url("/assets//images/indexImg/图层2.png") no-repeat; }
+.banner { position: relative; width: 100%; z-index: 1; height: 758px; display: flex; box-sizing: border-box; flex-direction: column; align-items: center; padding-top: 300px; background: url("./assets//images/indexImg/图层2.png") no-repeat; }
 .banner .banner_title { margin-bottom: 66px; }
 .banner .banner_title h1 { font-size: 50px; color: #fff; letter-spacing: 10px; }
 .banner .banner_title p { text-align: center; color: #fff; transform: scale(0.6); letter-spacing: 10px; }

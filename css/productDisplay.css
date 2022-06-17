@@ -51,7 +51,7 @@ footer .footer_bottom .box .link_box i { font-size: 25px; color: var(--main-titl
 footer .footer_bottom .box .link_box i:hover { color: var(--font-color); }
 footer .footer_bottom .box .link_box i:not(:last-child) { margin-right: 10px; }
 
-.banner { width: 100%; height: 846px; background: url("/assets/images/exhibition/banner.png"); margin-bottom: 31px; }
+.banner { width: 100%; height: 846px; background: url("./assets/images/exhibition/banner.png"); margin-bottom: 31px; }
 
 main .content_title { display: flex; flex-direction: column; align-items: center; margin-bottom: 185px; }
 main .content_title h3 { letter-spacing: 3px; color: #666666; font-size: 30px; margin-bottom: 22px; }
