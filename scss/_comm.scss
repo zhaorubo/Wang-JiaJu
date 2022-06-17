@@ -201,11 +201,16 @@ footer {
       .content_item {
         display: flex;
         flex-direction: column;
+        height: 250px;
 
         li {
           a {
             color: #999999 !important;
             font-size: 14px;
+
+            &:hover {
+              color: var(--font-color) !important;
+            }
           }
 
           &:first-child a {
@@ -254,6 +259,8 @@ footer {
       .trademark_msg {
         color: var(--main-title-font-color);
         font-size: 12px;
+        user-select: none;
+
       }
 
       .link_box {
@@ -263,11 +270,18 @@ footer {
 
         p {
           color: var(--main-title-font-color) !important;
+          user-select: none;
         }
 
         i {
           font-size: 25px;
           color: var(--main-title-font-color);
+          transition: all .3s ease;
+          cursor: pointer;
+
+          &:hover {
+            color: var(--font-color);
+          }
 
           &:not(:last-child) {
             margin-right: 10px;

@@ -36,21 +36,23 @@ footer .footer_content .msg_content .last_content_item > li span, footer .footer
 footer .footer_content .msg_content .last_content_item .phone_link { border-left: 1px solid #4d4d4d; padding-left: 25px; }
 footer .footer_content .msg_content .last_content_item .phone_link li:not(:last-child) { margin-bottom: 29px; }
 footer .footer_content .msg_content .last_content_item .phone_link li span, footer .footer_content .msg_content .last_content_item .phone_link li i { color: var(--main-title-font-color); }
-footer .footer_content .msg_content .content_item { display: flex; flex-direction: column; }
+footer .footer_content .msg_content .content_item { display: flex; flex-direction: column; height: 250px; }
 footer .footer_content .msg_content .content_item li a { color: #999999 !important; font-size: 14px; }
+footer .footer_content .msg_content .content_item li a:hover { color: var(--font-color) !important; }
 footer .footer_content .msg_content .content_item li:first-child a { font-size: 16px; color: #e6e6e6 !important; margin-bottom: 39px; }
 footer .footer_content .msg_content .content_item li:not(:last-child) { margin-right: 100px; margin-bottom: 24px; }
 footer .footer_content .msg_content .content_item li { color: #999999; font-size: 14px; }
 footer .footer_content .msg_content .content_item li:first-child { font-size: 16px; color: #e6e6e6; margin-bottom: 39px; }
 footer .footer_bottom { height: 38px; width: 100%; background-color: #202020; border-top: 1px solid #ccc; display: flex; justify-content: space-around; align-items: center; }
 footer .footer_bottom .box { width: 1185px; display: flex; justify-content: space-around; align-items: center; }
-footer .footer_bottom .box .trademark_msg { color: var(--main-title-font-color); font-size: 12px; }
+footer .footer_bottom .box .trademark_msg { color: var(--main-title-font-color); font-size: 12px; user-select: none; }
 footer .footer_bottom .box .link_box { display: flex; align-items: center; justify-content: center; }
-footer .footer_bottom .box .link_box p { color: var(--main-title-font-color) !important; }
-footer .footer_bottom .box .link_box i { font-size: 25px; color: var(--main-title-font-color); }
+footer .footer_bottom .box .link_box p { color: var(--main-title-font-color) !important; user-select: none; }
+footer .footer_bottom .box .link_box i { font-size: 25px; color: var(--main-title-font-color); transition: all .3s ease; cursor: pointer; }
+footer .footer_bottom .box .link_box i:hover { color: var(--font-color); }
 footer .footer_bottom .box .link_box i:not(:last-child) { margin-right: 10px; }
 
-.banner { position: relative; width: 100%; z-index: 1; height: 758px; display: flex; box-sizing: border-box; flex-direction: column; align-items: center; padding-top: 300px; background: url("/assets/indexImg/banner1.png") no-repeat; }
+.banner { position: relative; width: 100%; z-index: 1; height: 758px; display: flex; box-sizing: border-box; flex-direction: column; align-items: center; padding-top: 300px; background: url("/assets//images/indexImg/banner1.png") no-repeat; }
 .banner .banner_title { margin-bottom: 66px; }
 .banner .banner_title h1 { font-size: 50px; color: #fff; }
 .banner .banner_title p { text-align: center; color: #fff; transform: scale(0.6); letter-spacing: 10px; }
@@ -66,7 +68,7 @@ footer .footer_bottom .box .link_box i:not(:last-child) { margin-right: 10px; }
 .banner .banner_list_box ul li { width: 14px; height: 14px; border-radius: 50%; border: 1px solid #fff; cursor: pointer; }
 .banner .banner_mask { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.353); z-index: -1; }
 
-main .live .live_content_box { position: relative; background: url("/assets/indexImg/图层2.png"); height: 936px; width: 100%; display: flex; align-items: center; justify-content: center; }
+main .live .live_content_box { position: relative; background: url("/assets//images/indexImg/图层2.png"); height: 936px; width: 100%; display: flex; align-items: center; justify-content: center; }
 main .live .live_content_box .live_content_title { position: absolute; top: 0; }
 main .live .live_content_box .live_content_title ul { display: flex; }
 main .live .live_content_box .live_content_title ul li { width: 92px; height: 34px; text-align: center; line-height: 34px; background-color: #ffffff87; border: solid 1px #acacac; transform: translateY(-50%); cursor: pointer; }
@@ -94,7 +96,7 @@ main .design .design_content .content ul li:nth-child(3) > .design_title_box { b
 main .design .design_content .content ul li:nth-child(4) > .design_title_box { background-color: var(--livingDesign-title-color-four); }
 main .news .title_box { margin-bottom: 111px; }
 main .news .title_box .title { width: 1038px; height: 46px; }
-main .news .news_content_box { position: relative; background: url("/assets/indexImg/小banner1.png") no-repeat; height: 765px; width: 100%; display: flex; align-items: center; justify-content: center; }
+main .news .news_content_box { position: relative; background: url("/assets//images/indexImg/小banner1.png") no-repeat; height: 765px; width: 100%; display: flex; align-items: center; justify-content: center; }
 main .news .news_content_box .content { width: 1246px; height: 450px; display: flex; justify-content: space-between; }
 main .news .news_content_box .content .content_left { width: 656px; height: 100%; background-color: #fff; }
 main .news .news_content_box .content .content_left .img_box { width: 656px; height: 333px; }
@@ -129,7 +131,7 @@ main .service .service_content .item_list li .msg_content { padding: 0 5px; }
 main .service .service_content .item_list li .msg_content h4 { font-size: 16px; text-align: center; margin: 10px 0; }
 main .service .service_content .item_list li .msg_content p { font-size: 12px; line-height: 20px; }
 main .center { margin-bottom: 7px; }
-main .center .center_content { position: relative; background: url("/assets/indexImg/222.png") no-repeat; height: 765px; width: 100%; z-index: 1; overflow: hidden; display: flex; flex-direction: column; align-items: center; }
+main .center .center_content { position: relative; background: url("/assets//images/indexImg/222.png") no-repeat; height: 765px; width: 100%; z-index: 1; overflow: hidden; display: flex; flex-direction: column; align-items: center; }
 main .center .center_content::after { content: ''; display: block; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000; opacity: .5; z-index: -1; }
 main .center .center_content .title_box { margin-top: 94px; }
 main .center .center_content .title_box .title { width: 1130px; height: 46px; }
